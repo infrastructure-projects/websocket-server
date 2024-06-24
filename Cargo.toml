@@ -1,0 +1,20 @@
+[package]
+name = "websocket-server"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.86"
+axum = { version = "0.7.5", features = ["ws"] }
+dashmap = "5.5.3"
+flume = "0.11.0"
+futures = "0.3.30"
+lazy_static = "1.5.0"
+lib-utils = { version = "0.1.0", path = "crates/libs/lib-utils" }
+serde = { version = "1.0.203", features = ["derive"] }
+serde_json = "1.0.117"
+serde_yaml = "0.9.34"
+tokio = { version = "1.38.0", features = ["full"] }
+tracing = "0.1.40"
+tracing-subscriber = "0.3.18"
+uuid = { version = "1.8.0", features = ["v4", "fast-rng", "macro-diagnostics"] }
